@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artifact 2 - Machine Learning Algorithms</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    header h1, footer p {
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 20px auto;
+      background: white;
+      padding: 25px 40px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #1a73e8;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      background-color: #fff;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #e8f0fe;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    img.diagram {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .reflection {
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-left: 4px solid #1a73e8;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    .meta {
+      font-style: italic;
+      font-size: 14px;
+      color: #555;
+      text-align: right;
+      margin-bottom: 15px;
+    }
+
+    .title-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .title-section h2 {
+      margin: 5px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Professional Portfolio Artifact 2</h1>
+  </header>
+
+  <div class="container">
+    <div class="meta">
+      <p>Gopichand Buddi | Indiana Wesleyan University<br>
+      Machine Learning Fundamentals | Dr. Dawudu, Asabe | November 2, 2025</p>
+    </div>
+
+    <div class="title-section">
+      <h2>Machine Learning Algorithms: Structure, Types, and Examples</h2>
+    </div>
+
+    <section class="section">
+      <h3>Introduction</h3>
+      <p>This artifact explores the foundational <strong>Machine Learning (ML) algorithms</strong> that serve as the backbone of predictive analytics and artificial intelligence systems. Understanding the algorithmic structure and learning approach is essential to choosing the right model for a given problem. This artifact focuses on categorizing ML algorithms, illustrating their working structures, and presenting real-world use cases.</p>
+    </section>
+
+    <section class="section">
+      <h3>Structure of a Machine Learning System</h3>
+      <p>A typical ML system follows these stages:</p>
+      <ol>
+        <li><strong>Data Collection:</strong> Gathering relevant and high-quality data.</li>
+        <li><strong>Data Preprocessing:</strong> Cleaning, normalization, and feature selection.</li>
+        <li><strong>Model Selection:</strong> Choosing an appropriate algorithm based on the problem type.</li>
+        <li><strong>Training:</strong> Feeding data into the model and optimizing parameters.</li>
+        <li><strong>Evaluation:</strong> Assessing model performance using metrics like accuracy, precision, and recall.</li>
+        <li><strong>Deployment:</strong> Integrating the model into production environments.</li>
+      </ol>
+      <img src="structure-diagram.png" alt="Machine Learning Structure Diagram" class="diagram" />
+    </section>
+
+    <section class="section">
+      <h3>Types of Machine Learning Algorithms</h3>
+      <p>Machine Learning algorithms can be grouped into three main categories based on the type of data and feedback they receive:</p>
+
+      <h4>1. Supervised Learning</h4>
+      <p>Supervised learning algorithms learn from labeled datasets where both input and output values are known.</p>
+      <ul>
+        <li><strong>Linear Regression:</strong> Predicts continuous outcomes (e.g., predicting house prices).</li>
+        <li><strong>Logistic Regression:</strong> Classifies binary outcomes (e.g., spam detection).</li>
+        <li><strong>Decision Trees:</strong> Hierarchical models for classification and regression tasks.</li>
+        <li><strong>Random Forest:</strong> Ensemble method that improves accuracy by combining multiple decision trees.</li>
+        <li><strong>Support Vector Machines (SVM):</strong> Separates data points using optimal hyperplanes.</li>
+      </ul>
+
+      <h4>2. Unsupervised Learning</h4>
+      <p>Unsupervised learning algorithms identify patterns and relationships in unlabeled data.</p>
+      <ul>
+        <li><strong>K-Means Clustering:</strong> Groups data into clusters based on similarity.</li>
+        <li><strong>Hierarchical Clustering:</strong> Builds nested clusters for hierarchical data analysis.</li>
+        <li><strong>Principal Component Analysis (PCA):</strong> Reduces data dimensionality while retaining variance.</li>
+      </ul>
+
+      <h4>3. Reinforcement Learning</h4>
+      <p>Reinforcement learning involves training an agent to interact with an environment through rewards and penalties.</p>
+      <ul>
+        <li><strong>Q-Learning:</strong> Uses value-based learning to optimize actions.</li>
+        <li><strong>Deep Q-Networks (DQN):</strong> Combines deep learning and reinforcement learning for complex environments like games or robotics.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>Algorithm Comparison Table</h3>
+      <table>
+        <tr>
+          <th>Algorithm</th>
+          <th>Type</th>
+          <th>Key Concept</th>
+          <th>Use Case Example</th>
+        </tr>
+        <tr>
+          <td>Linear Regression</td>
+          <td>Supervised</td>
+          <td>Predicts continuous outcomes</td>
+          <td>Sales forecasting</td>
+        </tr>
+        <tr>
+          <td>K-Means Clustering</td>
+          <td>Unsupervised</td>
+          <td>Groups data based on similarity</td>
+          <td>Customer segmentation</td>
+        </tr>
+        <tr>
+          <td>Decision Trees</td>
+          <td>Supervised</td>
+          <td>Rule-based classification</td>
+          <td>Loan approval systems</td>
+        </tr>
+        <tr>
+          <td>Q-Learning</td>
+          <td>Reinforcement</td>
+          <td>Maximizes reward through exploration</td>
+          <td>Autonomous vehicle navigation</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h3>Visual Diagram of Algorithm Relationships</h3>
+      <img src="algorithm-types.png" alt="Algorithm Types Diagram" class="diagram" />
+    </section>
+
+    <section class="section reflection">
+      <h3>Reflection</h3>
+      <p>Through this artifact, I deepened my understanding of how Machine Learning algorithms function, how to classify them, and how to select the right one for specific data problems. The structural visualization and comparison enhanced my comprehension of real-world ML system design. This serves as a foundation for more advanced topics such as Deep Learning and predictive modeling covered in Artifact 3.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Gopichand Buddi | Machine Learning Fundamentals | Indiana Wesleyan University</p>
+  </footer>
+</body>
+</html>
